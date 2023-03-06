@@ -44,7 +44,7 @@ In this version ARC_SUPPORT is enabled and LIN_ADVANCE is not.
 ## Steps/mm
 
 Le réglage par défaut était à 80.121 en X et Y, 399.778 en Z et 445 en E.  
-Les valmeurs décimales n'apportaient pas plus de précision et de toute façon on calibre l'imprimante par M92 dans le GCode de démarrage.  
+Les valeurs décimales n'apportaient pas plus de précision et de toute façon on calibre l'imprimante par M92 dans le GCode de démarrage.  
 En Z l'imprimante est équipée d'une vis sans fin et rien ne justifie une valeur de pas à décimales.  
 Des décimales injustifiées en Z mènent à des arrondis impossibles et une gestion du micropas qui nuit au bon fonctionnement de l'imprimante.  
 Dans le firmware j'ai modifié les réglages par défaut à {80,80,400,445}.  
@@ -66,7 +66,7 @@ Suite à cette expérience j'ai décidé de limiter la chauffe du plateau à 95�
 
 ## Pourquoi pas de LIN_ADVANCE ?
 
-Cette fonctioonalité est très séduisante et devait améliorer la qualité des impressions et j'ai donc essayé.  
+Cette fonctionalité est très séduisante et devait améliorer la qualité des impressions et j'ai donc essayé.  
 Malheureusement mes essais n'ont vraiment pas été couronnés de succès.  
 Peut être que la carte mère 8 bits ne dispose pas d'assez de puissance de calcul ou peut être que cette version de Marlin l'implémente mal mais je n'y suis pas arrivé.  
 J'avais activé le LIN_ADVANCE d'abord avec la valeur K définie dans le firmware puis avec K à 0 mais j'avais beau essayer et ré-essayer de calibrer correctement je n'ai constaté que des dégradations sur plusieurs tests.
